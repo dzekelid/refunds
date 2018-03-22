@@ -20,9 +20,9 @@ tags:
 - Change Log
 - Billing
 - API LIfeycle
-created: "2018-03-13"
-modified: "2018-03-13"
-url: https://raw.githubusercontent.com/streamdata-gallery/refunds/master/_listings/stripe/apis.yaml
+created: "2018-03-22"
+modified: "2018-03-22"
+url: https://raw.githubusercontent.com/streamdata-gallery-topics/refunds/master/_listings/stripe/apis.yaml
 specificationVersion: "0.14"
 apis:
 - name: Stripe
@@ -33,7 +33,7 @@ apis:
   tags: Refunds
   properties:
   - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery/refunds/master/_listings/stripe/refunds-refund-post.md
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/refunds/master/_listings/stripe/application-fees-fee-refunds-id-get.md
 x-common:
 - type: x-base
   url: https://api.stripe.com/
