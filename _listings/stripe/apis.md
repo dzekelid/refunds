@@ -33,7 +33,7 @@ apis:
   tags: Refunds
   properties:
   - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/refunds/master/_listings/stripe/refunds-post.md
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/refunds/master/_listings/stripe/refunds-refund-get.md
 x-common:
 - type: x-base
   url: https://api.stripe.com/
