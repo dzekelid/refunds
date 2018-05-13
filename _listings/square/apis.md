@@ -21,19 +21,16 @@ modified: "2018-05-13"
 url: https://raw.githubusercontent.com/streamdata-gallery-topics/refunds/master/_listings/square/apis.md
 specificationVersion: "0.14"
 apis:
-- name: Square Connect API Get Location Refunds
-  description: Provides the details for all refunds initiated by a merchant or any
-    of the merchant's mobile staff during a date range. Date ranges cannot exceed
-    one year in length.
+- name: Square Connect API Post Location Refunds
+  description: Issues a refund for a previously processed payment. You must issue
+    a refund within 60 days of the associated payment.
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/square-logo.png
   humanURL: https://squareup.com
   baseURL: https://connect.squareup.com/v1/
   tags: Refunds
   properties:
   - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/refunds/master/_listings/square/location-id-refunds-get.md
-  - type: x-postman-collection
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/refunds/master/_listings/square/location-id-refunds-get-postman.md
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/refunds/master/_listings/square/location-id-refunds-post.md
 x-common:
 - type: x-base
   url: https://connect.squareup.com
