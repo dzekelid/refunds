@@ -34,7 +34,38 @@ apis:
   properties:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/refunds/master/_listings/stripe/refunds-refund-post.md
+- name: Stripe Get Application Fees Fee Refunds
+  description: By default, you can see the 10 most recent refunds stored directly
+    on the application fee object, but you can also retrieve details about a specific
+    refund stored on the application fee.
+  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/stripe-black.png
+  humanURL: https://stripe.com/
+  baseURL: https://api.stripe.com/v1/
+  tags: Refunds
+  properties:
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/refunds/master/_listings/stripe/application-fees-fee-refunds-id-get.md
+  - type: x-postman-collection
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/refunds/master/_listings/stripe/application-fees-fee-refunds-id-get-postman.md
 x-common:
+- type: x-base
+  url: https://api.stripe.com/
+- type: x-blog
+  url: https://stripe.com/blog
+- type: x-blog-rss
+  url: https://stripe.com/blog/feed.rss
+- type: x-change-log
+  url: https://stripe.com/docs/upgrades
+- type: x-crunchbase
+  url: http://www.crunchbase.com/company/stripe
+- type: x-github
+  url: https://github.com/stripe
+- type: x-pricing
+  url: https://stripe.com/us/pricing
+- type: x-twitter
+  url: https://twitter.com/stripe
+- type: x-website
+  url: https://stripe.com/
 - type: x-base
   url: https://api.stripe.com/
 - type: x-blog
