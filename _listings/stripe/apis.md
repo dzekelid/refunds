@@ -34,17 +34,15 @@ apis:
   properties:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/refunds/master/_listings/stripe/refunds-refund-post.md
-- name: Stripe Get Charges Charge Refunds Refund
-  description: Get Charges, Charge, Refunds, Refund
+- name: Stripe Add Charges Charge Refunds Refund
+  description: Post Charges, Charge, Refunds, Refund
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/stripe-black.png
   humanURL: https://stripe.com/
   baseURL: https://api.stripe.com/v1/
   tags: Refunds
   properties:
   - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/refunds/master/_listings/stripe/charges-charge-refunds-refund-get.md
-  - type: x-postman-collection
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/refunds/master/_listings/stripe/charges-charge-refunds-refund-get-postman.md
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/refunds/master/_listings/stripe/charges-charge-refunds-refund-post.md
 x-common:
 - type: x-base
   url: https://api.stripe.com/
