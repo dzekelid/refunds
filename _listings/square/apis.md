@@ -21,27 +21,19 @@ modified: "2018-05-13"
 url: https://raw.githubusercontent.com/streamdata-gallery-topics/refunds/master/_listings/square/apis.md
 specificationVersion: "0.14"
 apis:
-- name: Square Connect API Get V2 Locations Location Refunds
-  description: |-
-    Lists refunds for one of a business's locations.
-
-    In addition to full or partial tender refunds processed through Square APIs,
-    refunds may result from itemized returns or exchanges through Square's
-    Point of Sale applications.
-
-    Refunds with a `status` of `PENDING` are not currently included in this
-    endpoint's response.
-
-    Max results per [page](#paginatingresults): 50
+- name: Square Connect API Get Location Refunds
+  description: Provides the details for all refunds initiated by a merchant or any
+    of the merchant's mobile staff during a date range. Date ranges cannot exceed
+    one year in length.
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/square-logo.png
   humanURL: https://squareup.com
   baseURL: https://connect.squareup.com/v1/
   tags: Refunds
   properties:
   - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/refunds/master/_listings/square/v2-locations-location-id-refunds-get.md
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/refunds/master/_listings/square/location-id-refunds-get.md
   - type: x-postman-collection
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/refunds/master/_listings/square/v2-locations-location-id-refunds-get-postman.md
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/refunds/master/_listings/square/location-id-refunds-get-postman.md
 x-common:
 - type: x-base
   url: https://connect.squareup.com
