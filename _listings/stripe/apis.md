@@ -34,20 +34,15 @@ apis:
   properties:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/refunds/master/_listings/stripe/refunds-refund-post.md
-- name: Stripe Get Refunds
-  description: "Returns a list of all refunds you\u2019ve previously created. The
-    refunds are returned in sorted order, with the most recent refunds appearing first.
-    For convenience, the 10 most recent refunds are always available by default on
-    the charge object."
+- name: Stripe Add Refunds
+  description: Post Refunds
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/stripe-black.png
   humanURL: https://stripe.com/
   baseURL: https://api.stripe.com/v1/
   tags: Refunds
   properties:
   - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/refunds/master/_listings/stripe/refunds-get.md
-  - type: x-postman-collection
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/refunds/master/_listings/stripe/refunds-get-postman.md
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/refunds/master/_listings/stripe/refunds-post.md
 x-common:
 - type: x-base
   url: https://api.stripe.com/
