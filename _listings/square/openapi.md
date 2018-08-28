@@ -1,4 +1,3 @@
----
 swagger: "2.0"
 x-collection-name: Square
 x-complete: 1
@@ -52,6 +51,48 @@ paths:
         name: order
         description: TThe order in which payments are listed in the response
       responses:
+        1:
+          description: Photoset not found - The photoset id passed was not the id
+            of avalid photoset owned by the calling user
+        2:
+          description: Photo not found - The photo id passed was not the id of a valid
+            photo owned by the calling user
+        95:
+          description: SSL is required - SSL is required to access the Flickr API
+        96:
+          description: Invalid signature - The passed signature was invalid
+        97:
+          description: Missing signature - The call required signing but no signature
+            was sent
+        98:
+          description: Login failed / Invalid auth token - The login details or auth
+            token passed were invalid
+        99:
+          description: User not logged in / Insufficient permissions - The method
+            requires user authentication but the user was not logged in, or the authenticated
+            method call did not have the required permissions
+        100:
+          description: Invalid API Key - The API key passed was not valid or has expired
+        105:
+          description: Service currently unavailable - The requested service is temporarily
+            unavailable
+        106:
+          description: Write operation failed - The requested operation failed due
+            to a temporary issue
+        111:
+          description: Format "xxx" not found - The requested response format was
+            not found
+        112:
+          description: Method "xxx" not found - The requested method was not found
+        114:
+          description: Invalid SOAP envelope - The SOAP envelope send in the request
+            could not be parsed
+        115:
+          description: Invalid XML-RPC Method Call - The XML-RPC request document
+            could not be parsed
+        116:
+          description: Bad URL found - One or more arguments contained a URL that
+            has been used for abuse on Flickr
         200:
           description: OK
       tags:
@@ -77,42 +118,3 @@ paths:
       - Year
       - In
       - Length
-  /v2/locations/{location_id}/refunds:
-    get:
-      summary: ListRefunds
-      description: |-
-        Lists refunds for one of a business's locations.
-
-        Refunds with a `status` of `PENDING` are not currently included in this
-        endpoint's response.
-
-        Max results per [page](#paginatingresults): 50
-      operationId: v2.locations.location_id.refunds.get
-      x-api-path-slug: v2locationslocation-idrefunds-get
-      parameters:
-      - in: header
-        name: Authorization
-        description: The value to provide in the Authorization header ofyour request
-      - in: query
-        name: begin_time
-        description: The beginning of the requested reporting period, in RFC 3339
-          format
-      - in: query
-        name: cursor
-        description: A pagination cursor returned by a previous call to this endpoint
-      - in: query
-        name: end_time
-        description: The end of the requested reporting period, in RFC 3339 format
-      - in: path
-        name: location_id
-        description: The ID of the location to list refunds for
-      - in: query
-        name: sort_order
-        description: The order in which results are listed in the response (`ASC`
-          foroldest first, `DESC` for newest first)
-      responses:
-        200:
-          description: OK
-      tags:
-      - ListRefunds
----

@@ -2,7 +2,7 @@
   "info": {
     "name": "Stripe Get Refunds",
     "_postman_id": "8bfb4edb-ae7f-44ac-8a99-5862cabbd3c9",
-    "description": "Returns a list of all refunds you’ve previously created. The refunds are returned in sorted order, with the most recent refunds appearing first. For convenience, the 10 most recent refunds are always available by default on the charge object.",
+    "description": "Returns a list of all refunds you???ve previously created. The refunds are returned in sorted order, with the most recent refunds appearing first. For convenience, the 10 most recent refunds are always available by default on the charge object.",
     "schema": "https://schema.getpostman.com/json/collection/v2.0.0/"
   },
   "item": [
@@ -18,7 +18,7 @@
             "body": {
               "mode": "raw"
             },
-            "description": "Returns a list of all refunds you’ve previously created"
+            "description": "Returns a list of all refunds you???ve previously created"
           },
           "response": [
             {

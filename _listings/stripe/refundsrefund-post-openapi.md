@@ -549,10 +549,10 @@ paths:
   /refunds:
     get:
       summary: Get Refunds
-      description: "Returns a list of all refunds you\u2019ve previously created.
-        The refunds are returned in sorted order, with the most recent refunds appearing
+      description: Returns a list of all refunds you???ve previously created. The
+        refunds are returned in sorted order, with the most recent refunds appearing
         first. For convenience, the 10 most recent refunds are always available by
-        default on the charge object."
+        default on the charge object.
       operationId: getRefunds
       x-api-path-slug: refunds-get
       parameters:

@@ -7,36 +7,31 @@ image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/237-paypal
 x-kinRank: "10"
 x-alexaRank: "71"
 tags: Refunds
-created: "2018-06-25"
-modified: "2018-06-25"
+created: "2018-08-28"
+modified: "2018-08-28"
 url: https://raw.githubusercontent.com/streamdata-gallery-topics/refunds/master/_listings/paypal/apis.md
 specificationVersion: "0.14"
 apis:
-- name: Paypal Refund
-  x-api-slug: paypal
+- name: PayPal (Sandbox) - Refund
+  x-api-slug: adaptivepaymentsrefund-post
   description: Use the Refund API operation to refund all or part of a payment. You
     can specify the amount of the refund and identify the accounts to receive the
     refund by the payment key or tracking ID, and optionally, by transaction ID or
     the receivers of the original payment.
   image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/237-paypal.jpg
   humanURL: https://paypal.com
-  baseURL: https://svcs.sandbox.paypal.com////AdaptivePayments/Refund
-  tags: Payments,Refunds
+  baseURL: https://svcs.sandbox.paypal.com//
+  tags: International, Payments, Billing, Merchant, Indie EdTech Data Jam, Getting
+    Started Example, Stack Network, Stack, Hypermedia API, Financial Services, Technology,
+    Mobile, SaaS, internet, Invoices, Payments, Payments, Relative Data, Service API
   properties:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/refunds/master/_listings/paypal/adaptivepaymentsrefund-post-openapi.md
-- name: Paypal
-  x-api-slug: paypal
-  description: PayPal is the faster, safer way to send money, make an online payment,
-    receive money or set up a merchant account.
-  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/237-paypal.jpg
-  humanURL: https://paypal.com
-  baseURL: https://svcs.sandbox.paypal.com//
-  tags: Refunds
-  properties:
-  - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/refunds/master/_listings/paypal/openapi.md
 x-common:
+- type: x-api-gallery
+  url: http://paylocity.api.gallery.streamdata.io
+- type: x-api-stack
+  url: http://paypal.stack.network
 - type: x-base-url
   url: https://api.paypal.com
 - type: x-crunchbase
